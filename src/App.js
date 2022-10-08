@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://geo.ipify.org/api/v2/country,city?apiKey=at_CNYoNRn32rpw0rYfKdkIVLLn46bbK');
+        const response = await axios.get('https://geo.ipify.org/api/v2/country,city?apiKey=');
         console.log(response);
       } catch (error) {
         console.error(error);
