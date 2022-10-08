@@ -1,4 +1,4 @@
-## API for IP-Adress
+## API for IP-Address
 https://geo.ipify.org/
 Docs: https://geo.ipify.org/docs
 
