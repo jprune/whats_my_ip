@@ -11,7 +11,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://geo.ipify.org/api/v2/country,city?apiKey=at_');
+        const response = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.REACT_APP_API_KEY}`);
         const secondResponse = await axios.get(`https://restcountries.com/v3.1/alpha/${response.data.location.country}`);
 
         setData({
