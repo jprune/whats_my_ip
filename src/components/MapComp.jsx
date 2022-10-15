@@ -9,9 +9,11 @@ const MapComp = ({ lat, lng }) => {
   }, [lat]);
 
   return (
-    <Map center={center} defaultZoom={7}>
-      <Marker width={50} anchor={center} />
-    </Map>
+  
+      <Map center={center} defaultZoom={7} boxClassname='border-solid border-8 border-white rounded-lg drop-shadow-md '>
+        <Marker width={50} anchor={center} />
+      </Map>
+    
   );
 };
 
