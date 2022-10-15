@@ -27,23 +27,22 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="h-screen flex flex-col justify-center items-center">
       <Header />
+
       <div className="flex flex-row items-center  bg-blue-100">
         <div className="flex flex-col justify-center items-left w-full ml-20">
+
           <IpAddress data={data} />
           <TimeZone timeZone={data?.ipData.location.timezone} />
           <Flag url={data?.flagURL} />
         </div>
+
         
           <div className="flex w-3/4 h-[500px] mr-20 ">
             <MapComp lat={data?.ipData.location.lat} lng={data?.ipData.location.lng} />
-          </div>
-           
-          
-       
-          
-        
+          </div>        
+
       </div>
       <Footer />
     </div>
