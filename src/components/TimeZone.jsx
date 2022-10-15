@@ -11,7 +11,7 @@ const TimeZone = ({ timeZone }) => {
 
   return (
     <div>
-      <p>Today is: {date}</p>
+      <p className='m-5 ml-12'>Today is: {date}</p>
     </div>
   );
 };
